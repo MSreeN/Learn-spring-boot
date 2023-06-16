@@ -9,6 +9,7 @@ import java.util.List;
 public class CourseController {
     @GetMapping("/courses")
     public List<Course> retrieveAllCourses() {
-        return Arrays.asList(new Course(1, "LearnSpringBoot"), new Course(2, "Learn Devops"));
+        return Arrays.asList(new Course(1, "LearnSpringBoot"), new Course(2, "Learn Devops"),
+        new Course(3, "Learn Docker"));
     }
 }
