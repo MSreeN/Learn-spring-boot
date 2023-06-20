@@ -1,18 +1,16 @@
 package com.springboot.learnspringboot;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
+//spring boot will map the configurations which have currency-service as a prefix to this class
 @ConfigurationProperties(prefix = "currency-service")
+@Component
 public class CurrencyServiceConfiguration {
     private String url;
     private String username;
     private String key;
 
-    public CurrencyServiceConfiguration(String url, String username, String key) {
-        this.url = url;
-        this.username = username;
-        this.key = key;
-    }
 
     public String getUrl() {
         return url;
