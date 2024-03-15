@@ -1,8 +1,13 @@
 package com.springboot.learnspringboot;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Course {
     private int courseId;
     private String courseName;
+
+    Course(){}
 
     public Course(int courseId, String courseName) {
         this.courseId = courseId;

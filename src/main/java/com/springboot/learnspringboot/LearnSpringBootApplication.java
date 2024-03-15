@@ -16,9 +16,9 @@ public class LearnSpringBootApplication {
 		var context =new AnnotationConfigApplicationContext(ConfigClass.class);
 		var aopTargetClass = context.getBean(AOPTargetClass.class);
 		var vehicle = context.getBean(VehicleServices.class);
-//		System.out.println(aopTargetClass);
-//		System.out.println(aopTargetClass.getClass());
-		aopTargetClass.pointCutMethod();
+		System.out.println(aopTargetClass);
+		System.out.println(aopTargetClass.getClass());
+		aopTargetClass.pointCutMethod(5, true);
 
 //		var applicationContext = new AnnotationConfigApplicationContext(ConfigClass.class);
 //		Person person = applicationContext.getBean(Person.class);
